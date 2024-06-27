@@ -1,7 +1,12 @@
 # Vim
 
-Lettepa for Vim
+Lettepa for [Vim]
+
+[Vim]: https://github.com/vim/vim
 
 ## License
 
-Like [Lettepa](https://github.com/lettepa/lettepa), the Vim port of Lettepa is licensed under the [MIT License](LICENSE).
+Like [Lettepa], the Vim port of Lettepa is licensed under the [MIT License].
+
+[Lettepa]: https://github.com/lettepa/lettepa
+[MIT License]: LICENSE
