@@ -1,2 +1,3 @@
-# vim
+# Vim
+
 Lettepa for Vim
