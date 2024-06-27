@@ -32,7 +32,7 @@ let s:lettepa.brgrey = ['#83A2B7', 247]
 let s:lettepa.white = ['#CCE0EC', 253]
 let s:lettepa.brwhite = ['#DFF3FF', 255]
 
-" Dark palette
+" Light palette
 let s:red = s:lettepa.kurenai
 let s:green = s:lettepa.aomidori
 let s:blue = s:lettepa.ruri
