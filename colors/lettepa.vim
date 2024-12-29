@@ -106,40 +106,40 @@ call s:h('Normal', s:fg, s:bg)
 call s:h('Comment', s:yellow)
 
 call s:h('Constant', s:blue)
-" String    links to Constant
+call s:h('String', s:blue)
 call s:h('Character', s:red)
-" Number    links to Constant
-" Boolean   links to Constant
-" Float     links to Number
+call s:h('Number', s:blue)
+call s:h('Boolean', s:blue)
+call s:h('Float', s:red)
 
 call s:h('Identifier', s:green)
-" Function links to Identifier
+call s:h('Function', s:green)
 
 call s:h('Statement', s:magenta)
-" Conditional links to Statement
-" Repeat      links to Statement
-" Label       links to Statement
-" Operator    links to Statement
-" Keyword     links to Statement
-" Exception   links to Statement
+call s:h('Conditional', s:magenta)
+call s:h('Repeat', s:magenta)
+call s:h('Label', s:magenta)
+call s:h('Operator', s:magenta)
+call s:h('Keyword', s:magenta)
+call s:h('Exception', s:magenta)
 
 call s:h('PreProc', s:magenta)
-" Include   links to PreProc
-" Define    links to PreProc
-" Macro     links to PreProc
-" PreCondit links to PreProc
+call s:h('Include', s:magenta)
+call s:h('Define', s:magenta)
+call s:h('Macro', s:magenta)
+call s:h('PreCondit', s:magenta)
 
 call s:h('Type', s:cyan)
 call s:h('StorageClass', s:magenta)
-" Structure    links to Type
-" Typedef      links to Type
+call s:h('Structure', s:cyan)
+call s:h('Typedef', s:cyan)
 
 call s:h('Special', s:green)
-" Tag            links to Special
-" SpecialChar    links to Special
+call s:h('Tag', s:green)
+call s:h('SpecialChar', s:green)
 call s:h('Delimiter', s:ignore)
-" SpecialComment links to Special
-" Debug          links to Special
+call s:h('SpecialComment', s:green)
+call s:h('Debug', s:green)
 
 call s:h('Underlined', s:red)
 
@@ -156,7 +156,7 @@ call s:h('Todo', s:green, s:bg0)
 call s:h('SpecialKey', s:ignore)
 
 call s:h('NonText', s:ignore)
-" EndOfBuffer links to NonText
+call s:h('EndOfBuffer', s:ignore)
 
 call s:h('StatusLine', s:fg, s:bg0)
 call s:h('StatusLineNC', s:fg0, s:bg0)
@@ -174,21 +174,21 @@ call s:h('WarningMsg', s:yellow, s:none, ['bold'])
 call s:h('IncSearch', s:none, s:none, ['reverse'])
 call s:h('Search', s:fg, s:cyan0)
 call s:h('CurSearch', s:none, s:none, ['reverse'])
-" QuickFixLine links to Search
+call s:h('QuickFixLine', s:fg, s:cyan0)
 
 call s:h('MoreMsg', s:fg, s:none, ['bold'])
 call s:h('ModeMsg', s:fg, s:none, ['bold'])
 
 call s:h('LineNr', s:ignore)
-" LineNrAbove cleared
-" LineNrBelow cleared
+call s:h('LineNrAbove', s:ignore)
+call s:h('LineNrBelow', s:ignore)
 
 call s:h('CursorLineNr', s:fg)
 call s:h('SignColumn', s:magenta)
-" CursorLineSign links to SignColumn
+call s:h('CursorLineSign', s:magenta)
 call s:h('Folded', s:blue, s:bg0)
 call s:h('FoldColumn', s:ignore)
-" CursorLineFold xxx links to FoldColumn
+call s:h('CursorLineFold', s:ignore)
 
 call s:h('Question', s:green)
 
@@ -214,10 +214,10 @@ call s:h('SpellRare', s:fg, s:magenta0, ['underline'])
 
 call s:h('Pmenu', s:fg, s:bg0)
 call s:h('PmenuSel', s:bg, s:fg)
-" PmenuKind     links to Pmenu
-" PmenuKindSel  links to PmenuSel
-" PmenuExtra    links to Pmenu
-" PmenuExtraSel links to PmenuSel
+call s:h('PmenuKind', s:fg, s:bg0)
+call s:h('PmenuKindSel', s:bg, s:fg)
+call s:h('PmenuExtra', s:fg, s:bg0)
+call s:h('PmenuExtraSel', s:bg, s:fg)
 call s:h('PmenuSbar', s:none, s:ignore)
 call s:h('PmenuThumb', s:none, s:fg)
 
