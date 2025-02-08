@@ -19,63 +19,71 @@ endif
 let s:lettepa = {}
 
 " Full palette
-let s:lettepa.kurenai = ['#CB1B45', 100]
-let s:lettepa.nakabeni = ['#ED5A65', 167]
-let s:lettepa.aomidori = ['#00AA90', 36]
-let s:lettepa.braomidori = ['#47D2BC', 79]
-let s:lettepa.ruri = ['#005CAF', 25]
-let s:lettepa.brruri = ['#37B4FD', 39]
-let s:lettepa.chigusa = ['#3A8FB7', 67]
-let s:lettepa.brchigusa = ['#71DCEA', 45]
-let s:lettepa.tsutsuji = ['#E03C8A', 198]
-let s:lettepa.brtsutsuji = ['#FD67B8', 205]
-let s:lettepa.kohaku = ['#CA7A2C', 172]
-let s:lettepa.tamako = ['#F9BF45', 221]
-let s:lettepa.black = ['#08192D', 234]
-let s:lettepa.brblack = ['#24384F', 237]
-let s:lettepa.dimgrey = ['#5C7186', 242]
-let s:lettepa.grey = ['#728A9E', 245]
-let s:lettepa.brgrey = ['#83A2B7', 247]
-let s:lettepa.white = ['#CCE0EC', 253]
-let s:lettepa.brwhite = ['#DFF3FF', 255]
+let s:lettepa.kachi = ['#08192d', 234]       " base3
+let s:lettepa.kon = ['#0f2540', 235]         " base2
+let s:lettepa.keshizumi = ['#434343', 238]   " base1
+let s:lettepa.nibi = ['#656765', 241]        " base0
+let s:lettepa.hai = ['#828282', 244]         " base00
+let s:lettepa.ginnezumi = ['#91989f', 246]   " base01
+let s:lettepa.shironezumi = ['#bdc0ba', 250] " base02
+let s:lettepa.shironeri = ['#fcfaf2', 231]   " base03
+let s:lettepa.nakabeni = ['#db4d6d', 167]
+let s:lettepa.kurenai = ['#cb1b45', 160]
+let s:lettepa.mizuasagi = ['#66bab7', 073]
+let s:lettepa.seiheki = ['#268785', 030]
+let s:lettepa.tsuyukusa = ['#2ea9df', 038]
+let s:lettepa.ruri = ['#005caf', 025]
+let s:lettepa.wasurenagusa = ['#7db9de', 075]
+let s:lettepa.chigusa = ['#3a8fb7', 032]
+let s:lettepa.momo = ['#f596aa', 211]
+let s:lettepa.tsutsuji = ['#e03c8a', 198]
+let s:lettepa.hanaba = ['#f7c242', 221]
+let s:lettepa.chojicha = ['#96632e', 094]
 
 " Palette based on 'background'
 if s:is_dark
+    " Main colors: 3, 2, 0, 01, 02
+    let s:bg = s:lettepa.kachi
+    let s:bg0 = s:lettepa.kon
+    let s:ignore = s:lettepa.nibi
+    let s:fg0 = s:lettepa.ginnezumi
+    let s:fg = s:lettepa.shironezumi
+    " Primary accent colors
     let s:red = s:lettepa.nakabeni
-    let s:green = s:lettepa.braomidori
-    let s:blue = s:lettepa.brruri
-    let s:cyan = s:lettepa.brchigusa
-    let s:magenta = s:lettepa.brtsutsuji
-    let s:yellow = s:lettepa.tamako
-    let s:bg = s:lettepa.black
-    let s:bg0 = s:lettepa.brblack
-    let s:fg0 = s:lettepa.brgrey
-    let s:fg = s:lettepa.white
+    let s:green = s:lettepa.mizuasagi
+    let s:blue = s:lettepa.tsuyukusa
+    let s:cyan = s:lettepa.wasurenagusa
+    let s:magenta = s:lettepa.momo
+    let s:yellow = s:lettepa.hanaba
+    " Secondary accent colors
     let s:red0 = s:lettepa.kurenai
-    let s:green0 = s:lettepa.aomidori
+    let s:green0 = s:lettepa.seiheki
     let s:blue0 = s:lettepa.ruri
     let s:cyan0 = s:lettepa.chigusa
     let s:magenta0 = s:lettepa.tsutsuji
-    let s:yellow0 = s:lettepa.kohaku
+    let s:yellow0 = s:lettepa.chojicha
 else
+    " Main colors: 03, 02, 00, 1, 2
+    let s:bg = s:lettepa.shironeri
+    let s:bg0 = s:lettepa.shironezumi
+    let s:ignore = s:lettepa.hai
+    let s:fg0 = s:lettepa.keshizumi
+    let s:fg = s:lettepa.kon
+    " Primary accent colors
     let s:red = s:lettepa.kurenai
-    let s:green = s:lettepa.aomidori
+    let s:green = s:lettepa.seiheki
     let s:blue = s:lettepa.ruri
     let s:cyan = s:lettepa.chigusa
     let s:magenta = s:lettepa.tsutsuji
-    let s:yellow = s:lettepa.kohaku
-    let s:bg = s:lettepa.brwhite
-    let s:bg0 = s:lettepa.white
-    let s:fg0 = s:lettepa.dimgrey
-    let s:fg = s:lettepa.brblack
+    let s:yellow = s:lettepa.chojicha
+    " Secondary accent colors
     let s:red0 = s:lettepa.nakabeni
-    let s:green0 = s:lettepa.braomidori
-    let s:blue0 = s:lettepa.brruri
-    let s:cyan0 = s:lettepa.brchigusa
-    let s:magenta0 = s:lettepa.brtsutsuji
-    let s:yellow0 = s:lettepa.tamako
+    let s:green0 = s:lettepa.mizuasagi
+    let s:blue0 = s:lettepa.tsuyukusa
+    let s:cyan0 = s:lettepa.wasurenagusa
+    let s:magenta0 = s:lettepa.momo
+    let s:yellow0 = s:lettepa.hanaba
 endif
-let s:ignore = s:lettepa.grey
 let s:none = ['NONE', 'NONE']
 
 " }}}
