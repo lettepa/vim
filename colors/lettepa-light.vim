@@ -22,16 +22,16 @@ let s:lettepa.shironezumi = ['#bdc0ba', 250] " base02
 let s:lettepa.shironeri = ['#fcfaf2', 231]   " base03
 let s:lettepa.nakabeni = ['#db4d6d', 167]
 let s:lettepa.kurenai = ['#cb1b45', 160]
-let s:lettepa.mizuasagi = ['#66bab7', 073]
-let s:lettepa.seiheki = ['#268785', 030]
-let s:lettepa.tsuyukusa = ['#2ea9df', 038]
-let s:lettepa.ruri = ['#005caf', 025]
-let s:lettepa.wasurenagusa = ['#7db9de', 075]
-let s:lettepa.chigusa = ['#3a8fb7', 032]
+let s:lettepa.mizuasagi = ['#66bab7', 73]
+let s:lettepa.seiheki = ['#268785', 30]
+let s:lettepa.tsuyukusa = ['#2ea9df', 38]
+let s:lettepa.ruri = ['#005caf', 25]
+let s:lettepa.wasurenagusa = ['#7db9de', 75]
+let s:lettepa.chigusa = ['#3a8fb7', 32]
 let s:lettepa.momo = ['#f596aa', 211]
 let s:lettepa.tsutsuji = ['#e03c8a', 198]
 let s:lettepa.hanaba = ['#f7c242', 221]
-let s:lettepa.chojicha = ['#96632e', 094]
+let s:lettepa.chojicha = ['#96632e', 94]
 
 " Light palette
 
