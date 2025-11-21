@@ -90,7 +90,7 @@ call s:h('String', s:blue)
 call s:h('Character', s:red)
 call s:h('Number', s:blue)
 call s:h('Boolean', s:blue)
-call s:h('Float', s:red)
+call s:h('Float', s:blue)
 
 call s:h('Identifier', s:green)
 call s:h('Function', s:green)
@@ -114,14 +114,14 @@ call s:h('StorageClass', s:magenta)
 call s:h('Structure', s:cyan)
 call s:h('Typedef', s:cyan)
 
-call s:h('Special', s:green)
-call s:h('Tag', s:green)
-call s:h('SpecialChar', s:green)
+call s:h('Special', s:magenta)
+call s:h('Tag', s:magenta)
+call s:h('SpecialChar', s:magenta)
 call s:h('Delimiter', s:ignore)
-call s:h('SpecialComment', s:green)
-call s:h('Debug', s:green)
+call s:h('SpecialComment', s:magenta)
+call s:h('Debug', s:magenta)
 
-call s:h('Underlined', s:red)
+call s:h('Underlined', s:cyan, s:none, ['underline'])
 
 call s:h('Ignore', s:ignore)
 
@@ -185,7 +185,7 @@ call s:h('DiffChange', s:yellow, s:bg0)
 call s:h('DiffDelete', s:red, s:bg0)
 call s:h('DiffText', s:red, s:bg0, ['bold'])
 
-call s:h('ColorColumn', s:none, s:ignore)
+call s:h('ColorColumn', s:none, s:bg0)
 
 call s:h('SpellBad', s:fg, s:red0, ['underline'])
 call s:h('SpellCap', s:fg, s:blue0, ['underline'])
