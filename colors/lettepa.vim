@@ -19,70 +19,68 @@ endif
 let s:lettepa = {}
 
 " Full palette
-let s:lettepa.kachi = ['#08192d', 234]       " base3
-let s:lettepa.kon = ['#0f2540', 235]         " base2
-let s:lettepa.keshizumi = ['#434343', 238]   " base1
-let s:lettepa.nibi = ['#656765', 241]        " base0
-let s:lettepa.hai = ['#828282', 244]         " base00
-let s:lettepa.ginnezumi = ['#91989f', 246]   " base01
-let s:lettepa.shironezumi = ['#bdc0ba', 250] " base02
-let s:lettepa.shironeri = ['#fcfaf2', 231]   " base03
-let s:lettepa.nakabeni = ['#db4d6d', 167]
-let s:lettepa.kurenai = ['#cb1b45', 160]
-let s:lettepa.mizuasagi = ['#66bab7', 73]
-let s:lettepa.seiheki = ['#268785', 30]
-let s:lettepa.tsuyukusa = ['#2ea9df', 38]
-let s:lettepa.ruri = ['#005caf', 25]
-let s:lettepa.wasurenagusa = ['#7db9de', 75]
-let s:lettepa.chigusa = ['#3a8fb7', 32]
-let s:lettepa.momo = ['#f596aa', 211]
-let s:lettepa.tsutsuji = ['#e03c8a', 198]
-let s:lettepa.hanaba = ['#f7c242', 221]
-let s:lettepa.chojicha = ['#96632e', 94]
+let s:lettepa.anlan = ['#101f30', 234]      " base3
+let s:lettepa.huilan = ['#21373d', 236]     " base2
+let s:lettepa.waguanhui = ['#47484c', 239]  " base1
+let s:lettepa.yuweihui = ['#5e616d', 241]   " base0
+let s:lettepa.xinghui = ['#b2bbbe', 250]    " base00
+let s:lettepa.dalishihui = ['#c4cbcf', 252] " base01
+let s:lettepa.zhenzhuhui = ['#e4dfd7', 254] " base02
+let s:lettepa.hanbaiyu = ['#f8f4ed', 231]   " base03
+let s:lettepa.haitanghong = ['#f03752', 167]
+let s:lettepa.fengyehong = ['#c21f30', 160]
+let s:lettepa.shilv = ['#57c3c2', 42]
+let s:lettepa.meidielv = ['#12aa9c', 36]
+let s:lettepa.jianshilan = ['#66a9c9', 39]
+let s:lettepa.dianqing = ['#1661ab', 25]
+let s:lettepa.pubulan = ['#51c4d3', 75]
+let s:lettepa.cuilan = ['#1e9eb3', 32]
+let s:lettepa.fengxianhuahong = ['#ea7293', 211]
+let s:lettepa.zijinghong = ['#ee2c79', 198]
+let s:lettepa.mihuang = ['#fbb957', 215]
+let s:lettepa.canghuang = ['#806332', 94]
 
 " Palette based on 'background'
 if s:is_dark
     " Main colors: 3, 2, 0, 01, 02
-    let s:bg = s:lettepa.kachi
-    let s:bg0 = s:lettepa.kon
-    let s:ignore = s:lettepa.nibi
-    let s:fg0 = s:lettepa.ginnezumi
-    let s:fg = s:lettepa.shironezumi
+    let s:bg = s:lettepa.anlan
+    let s:bg0 = s:lettepa.huilan
+    let s:fg0 = s:lettepa.dalishihui
+    let s:fg = s:lettepa.zhenzhuhui
     " Primary accent colors
-    let s:red = s:lettepa.nakabeni
-    let s:green = s:lettepa.mizuasagi
-    let s:blue = s:lettepa.tsuyukusa
-    let s:cyan = s:lettepa.wasurenagusa
-    let s:magenta = s:lettepa.momo
-    let s:yellow = s:lettepa.hanaba
+    let s:red = s:lettepa.haitanghong
+    let s:green = s:lettepa.shilv
+    let s:blue = s:lettepa.jianshilan
+    let s:cyan = s:lettepa.pubulan
+    let s:magenta = s:lettepa.fengxianhuahong
+    let s:yellow = s:lettepa.mihuang
     " Secondary accent colors
-    let s:red0 = s:lettepa.kurenai
-    let s:green0 = s:lettepa.seiheki
-    let s:blue0 = s:lettepa.ruri
-    let s:cyan0 = s:lettepa.chigusa
-    let s:magenta0 = s:lettepa.tsutsuji
-    let s:yellow0 = s:lettepa.chojicha
+    let s:red0 = s:lettepa.fengyehong
+    let s:green0 = s:lettepa.meidielv
+    let s:blue0 = s:lettepa.dianqing
+    let s:cyan0 = s:lettepa.cuilan
+    let s:magenta0 = s:lettepa.zijinghong
+    let s:yellow0 = s:lettepa.canghuang
 else
     " Main colors: 03, 02, 00, 1, 2
-    let s:bg = s:lettepa.shironeri
-    let s:bg0 = s:lettepa.shironezumi
-    let s:ignore = s:lettepa.hai
-    let s:fg0 = s:lettepa.keshizumi
-    let s:fg = s:lettepa.kon
+    let s:bg = s:lettepa.hanbaiyu
+    let s:bg0 = s:lettepa.zhenzhuhui
+    let s:fg0 = s:lettepa.waguanhui
+    let s:fg = s:lettepa.huilan
     " Primary accent colors
-    let s:red = s:lettepa.kurenai
-    let s:green = s:lettepa.seiheki
-    let s:blue = s:lettepa.ruri
-    let s:cyan = s:lettepa.chigusa
-    let s:magenta = s:lettepa.tsutsuji
-    let s:yellow = s:lettepa.chojicha
+    let s:red = s:lettepa.fengyehong
+    let s:green = s:lettepa.meidielv
+    let s:blue = s:lettepa.dianqing
+    let s:cyan = s:lettepa.cuilan
+    let s:magenta = s:lettepa.zijinghong
+    let s:yellow = s:lettepa.canghuang
     " Secondary accent colors
-    let s:red0 = s:lettepa.nakabeni
-    let s:green0 = s:lettepa.mizuasagi
-    let s:blue0 = s:lettepa.tsuyukusa
-    let s:cyan0 = s:lettepa.wasurenagusa
-    let s:magenta0 = s:lettepa.momo
-    let s:yellow0 = s:lettepa.hanaba
+    let s:red0 = s:lettepa.haitanghong
+    let s:green0 = s:lettepa.shilv
+    let s:blue0 = s:lettepa.jianshilan
+    let s:cyan0 = s:lettepa.pubulan
+    let s:magenta0 = s:lettepa.fengxianhuahong
+    let s:yellow0 = s:lettepa.mihuang
 endif
 let s:none = ['NONE', 'NONE']
 
@@ -145,13 +143,13 @@ call s:h('Typedef', s:cyan)
 call s:h('Special', s:magenta)
 call s:h('Tag', s:magenta)
 call s:h('SpecialChar', s:magenta)
-call s:h('Delimiter', s:ignore)
+call s:h('Delimiter', s:fg0)
 call s:h('SpecialComment', s:magenta)
 call s:h('Debug', s:magenta)
 
 call s:h('Underlined', s:cyan, s:none, ['underline'])
 
-call s:h('Ignore', s:ignore)
+call s:h('Ignore', s:fg0)
 
 call s:h('Error', s:red, s:none, ['bold'])
 
@@ -161,10 +159,10 @@ call s:h('Todo', s:green, s:bg0)
 
 " Extended highlighting {{{
 
-call s:h('SpecialKey', s:ignore)
+call s:h('SpecialKey', s:fg0)
 
-call s:h('NonText', s:ignore)
-call s:h('EndOfBuffer', s:ignore)
+call s:h('NonText', s:fg0)
+call s:h('EndOfBuffer', s:fg0)
 
 call s:h('StatusLine', s:fg, s:bg0)
 call s:h('StatusLineNC', s:fg0, s:bg0)
@@ -187,26 +185,26 @@ call s:h('QuickFixLine', s:fg, s:cyan0)
 call s:h('MoreMsg', s:fg, s:none, ['bold'])
 call s:h('ModeMsg', s:fg, s:none, ['bold'])
 
-call s:h('LineNr', s:ignore)
-call s:h('LineNrAbove', s:ignore)
-call s:h('LineNrBelow', s:ignore)
+call s:h('LineNr', s:fg0)
+call s:h('LineNrAbove', s:fg0)
+call s:h('LineNrBelow', s:fg0)
 
 call s:h('CursorLineNr', s:fg)
 call s:h('SignColumn', s:magenta)
 call s:h('CursorLineSign', s:magenta)
 call s:h('Folded', s:blue, s:bg0)
-call s:h('FoldColumn', s:ignore)
-call s:h('CursorLineFold', s:ignore)
+call s:h('FoldColumn', s:fg0)
+call s:h('CursorLineFold', s:fg0)
 
 call s:h('Question', s:green)
 
-call s:h('VertSplit', s:ignore)
+call s:h('VertSplit', s:fg0)
 
 call s:h('Title', s:green)
 
 call s:h('WildMenu', s:bg, s:fg)
 
-call s:h('Conceal', s:ignore)
+call s:h('Conceal', s:fg0)
 
 call s:h('DiffAdd', s:green, s:bg0)
 call s:h('DiffChange', s:yellow, s:bg0)
@@ -220,14 +218,14 @@ call s:h('SpellCap', s:fg, s:blue0, ['underline'])
 call s:h('SpellLocal', s:fg, s:cyan0, ['underline'])
 call s:h('SpellRare', s:fg, s:magenta0, ['underline'])
 
-call s:h('Pmenu', s:fg, s:bg0)
+call s:h('Pmenu', s:fg, s:bg)
 call s:h('PmenuSel', s:bg, s:fg)
-call s:h('PmenuKind', s:fg, s:bg0)
+call s:h('PmenuKind', s:fg, s:bg)
 call s:h('PmenuKindSel', s:bg, s:fg)
-call s:h('PmenuExtra', s:fg, s:bg0)
+call s:h('PmenuExtra', s:fg, s:bg)
 call s:h('PmenuExtraSel', s:bg, s:fg)
-call s:h('PmenuSbar', s:none, s:ignore)
-call s:h('PmenuThumb', s:none, s:fg)
+call s:h('PmenuSbar', s:none, s:bg)
+call s:h('PmenuThumb', s:none, s:fg0)
 
 " Cursor  guifg=bg guibg=fg
 " lCursor guifg=bg guibg=fg
