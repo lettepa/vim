@@ -13,7 +13,7 @@ let s:lettepa = {}
 
 " Full palette
 let s:lettepa.anlan = ['#101f30', 234]      " base3
-let s:lettepa.huilan = ['#21373d', 236]     " base2
+let s:lettepa.qinghui = ['#2b333e', 236]    " base2
 let s:lettepa.waguanhui = ['#47484c', 239]  " base1
 let s:lettepa.yuweihui = ['#5e616d', 241]   " base0
 let s:lettepa.xinghui = ['#b2bbbe', 250]    " base00
@@ -42,7 +42,7 @@ let s:bg = s:lettepa.hanbaiyu
 let s:bg0 = s:lettepa.zhenzhuhui
 let s:ignore = s:lettepa.xinghui
 let s:fg0 = s:lettepa.waguanhui
-let s:fg = s:lettepa.huilan
+let s:fg = s:lettepa.qinghui
 " Primary accent colors
 let s:red = s:lettepa.fengyehong
 let s:green = s:lettepa.meidielv
