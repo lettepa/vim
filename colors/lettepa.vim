@@ -210,6 +210,9 @@ call s:h('DiffAdd', s:green, s:bg0)
 call s:h('DiffChange', s:yellow, s:bg0)
 call s:h('DiffDelete', s:red, s:bg0)
 call s:h('DiffText', s:red, s:bg0, ['bold'])
+call s:h('Added', s:green, s:bg0)
+call s:h('Changed', s:yellow, s:bg0)
+call s:h('Removed', s:red, s:bg0)
 
 call s:h('ColorColumn', s:none, s:bg0)
 
